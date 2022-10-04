@@ -1,0 +1,13 @@
+{
+  "name": "task-client",
+  "version": "0.0.0",
+  "description": "Task-Client",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "camunda-external-task-client-js": "^2.2.0",
+    "prompt-sync": "^4.2.0"
+  }
+}

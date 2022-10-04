@@ -1,0 +1,78 @@
+{
+  "components": [
+    {
+      "text": "# Complain Section",
+      "type": "text",
+      "id": "Field_15lw16n"
+    },
+    {
+      "label": "Name",
+      "type": "textfield",
+      "id": "Field_1sitls7",
+      "key": "name",
+      "description": "Insert your first name and last name.",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Email",
+      "type": "textfield",
+      "id": "Field_1rzv396",
+      "key": "email",
+      "validate": {
+        "required": true
+      },
+      "description": "Insert your email address."
+    },
+    {
+      "values": [
+        {
+          "label": "Site Malfunctions",
+          "value": "siteIssue"
+        },
+        {
+          "label": "Issues with the product",
+          "value": "productIssue"
+        },
+        {
+          "label": "Issues with the purchase",
+          "value": "purchaseIssue"
+        },
+        {
+          "label": "About your experience at the shop",
+          "value": "experienceIssue"
+        }
+      ],
+      "label": "Type of complain",
+      "type": "select",
+      "id": "Field_18lni3b",
+      "key": "formtype",
+      "validate": {
+        "required": true
+      },
+      "description": "Select the type of complain you have about us.",
+      "defaultValue": "<none>"
+    },
+    {
+      "label": "What is the complain?",
+      "type": "textfield",
+      "id": "Field_095cuiv",
+      "key": "body",
+      "description": "Describe your complain in details, please?",
+      "validate": {
+        "required": true,
+        "minLength": 20
+      }
+    }
+  ],
+  "type": "default",
+  "id": "complainForm",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.3.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.17.0",
+  "schemaVersion": 4
+}

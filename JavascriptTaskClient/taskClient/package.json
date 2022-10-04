@@ -1,0 +1,9 @@
+{
+  "name": "task-client",
+  "version": "0.0.0",
+  "description": "taskClient",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  }
+}

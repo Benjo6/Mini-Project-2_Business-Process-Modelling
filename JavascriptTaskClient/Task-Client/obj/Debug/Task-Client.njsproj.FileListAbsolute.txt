@@ -1,0 +1,3 @@
+C:\Users\Benjamin Curovic\source\repos\JavascriptTaskClient\Task-Client\obj\Debug\Task-Client.njsproj.AssemblyReference.cache
+C:\Users\Benjamin Curovic\source\repos\JavascriptTaskClient\Task-Client\obj\Debug\Task-Client.njsproj.CoreCompileInputs.cache
+C:\Users\Benjamin Curovic\source\repos\JavascriptTaskClient\Task-Client\bin\Microsoft.NodejsTools.WebRole.dll
