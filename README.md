@@ -39,13 +39,15 @@ The questions:
 
 After the customer has filled this form in the server application (camunda-server) or answered the questions in the console application (Javascript) then the server will check if the issue is relevant to the customer service or to the tech team. If the issue is about the site, then the complain will be sent to the tech team otherwise will the complain proceed to the customer service. The releveant team will then recieve a mail by the auto mail sender about the complain, while the customer will receive a confirmation letter by the auto mail sender. Lastlly will the customer's mail be inserted into a email list within the Java project.
 
-![Picture of the BPMN process for the approach without an external task client](Customer-Complains/PictureOfTheBPMN.png)
+![](Customer-Complains/PictureOfTheBPMN.png)
+*Picture of the BPMN process for the approach without an external task client*
 
-![Picture of the BPMN process for the approach with an external task client (javascript)](JavascriptTaskClient/PictureOfProcessJS.png)
+![](JavascriptTaskClient/PictureOfProcessJS.png)
+*Picture of the BPMN process for the approach with an external task client (javascript)*
 
 There is a small different between the two processes due to the console application not being able to send emails within the process (for some weird reason). Another difference, the console application doesn't contain a human task, because you can't execute a human task outside the server application.
 
-###The Methods
+### The Methods
 
 <strong>Java Project:</strong>
 
