@@ -5,6 +5,11 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Task-Client", "Task-Client\Task-Client.njsproj", "{3D8D9679-4019-4EB6-A55C-948ADA3A124A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6707ED20-5124-4AEA-8E3F-6EC40CE7DC7A}"
+	ProjectSection(SolutionItems) = preProject
+		Task-Client\process.bpmn = Task-Client\process.bpmn
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
