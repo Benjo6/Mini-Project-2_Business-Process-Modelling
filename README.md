@@ -4,15 +4,19 @@
 The main objective of this task is to help you get familiar with the business context of system integration and to provide practical experience in modelling and automation of business processes by implementation of standard methods and notation.
 
 **Tasks**
+
 The task is to design a business process and develop a software application workflow, which integrates
 and automates several disparate operations.
 You can choose between processes related to either
-a) organization of marketing campaigns, or
-**b) handling of customer complains**
+
+a) organization of marketing campaigns
+
+*b) handling of customer complains*
 
 I choice process B for this assignment
 
 **Requirements**
+
 In this assignment I have to implement a process with business rules, software services and human tasks. 
 
 ## The Application
@@ -35,9 +39,9 @@ The questions:
 
 After the customer has filled this form in the server application (camunda-server) or answered the questions in the console application (Javascript) then the server will check if the issue is relevant to the customer service or to the tech team. If the issue is about the site, then the complain will be sent to the tech team otherwise will the complain proceed to the customer service. The releveant team will then recieve a mail by the auto mail sender about the complain, while the customer will receive a confirmation letter by the auto mail sender. Lastlly will the customer's mail be inserted into a email list within the Java project.
 
-[Picture of server application process]
+![Picture of the BPMN process for the approach without an external task client](Mini-Project-2_Business-Process-Modelling/Customer-Complains/PictureOfTheBPMN.png)
 
-[Picture of the console application process]
+![Picture of the BPMN process for the approach with an external task client (javascript)](Mini-Project-2_Business-Process-Modelling/JavascriptTaskClient/PictureOfProcessJS.png)
 
 There is a small different between the two processes due to the console application not being able to send emails within the process (for some weird reason). Another difference, the console application doesn't contain a human task, because you can't execute a human task outside the server application.
 
@@ -71,6 +75,8 @@ Completing the process through server:
 
 5. Tap on the process button and select the Customer-Complains or start the process through the modeler in projects bpmn file.
 
+6. After completing the process check https://www.wpoven.com/tools/free-smtp-server-for-testing and insert AutoResponseMail@RandomMail.com to see if the mails were sent. Also, check the email list within the Java project to see if your mail were inserted into the file.
+
 Completing the process through Javascript console application
 
 1. Clone the project
@@ -82,4 +88,6 @@ Completing the process through Javascript console application
 4. Either start the process through the task list or through the modeler.
 
 5. Run the Javascript application.
+
+6. After completing the process check https://www.wpoven.com/tools/free-smtp-server-for-testing and insert AutoResponseMail@RandomMail.com to see if the mails were sent. Also, check the email list within the Java project to see if your mail were inserted into the file.
 
