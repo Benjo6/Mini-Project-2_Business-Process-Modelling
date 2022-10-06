@@ -1,7 +1,7 @@
 # Mini-Project-2_Business-Process-Modelling
 
 ## Objectives of this Assignment
-The main objective of this task is to help you get familiar with the business context of system integration and to provide practical experience in modelling and automation of business processes by implementation of standard methods and notation.
+The main objective of this task is to help you get familiar with the business context of system integration and to provide practical experience in modelling and automation of business processes by the implementation of standard methods and notation.
 
 **Tasks**
 
@@ -13,15 +13,15 @@ a) organization of marketing campaigns
 
 *b) handling of customer complains*
 
-I choice process B for this assignment
+I selected process B for this assignment
 
 **Requirements**
 
-In this assignment I have to implement a process with business rules, software services and human tasks. 
+In this assignment, I have to implement a process with business rules, software services and human tasks. 
 
 ## The Application
 
-The application has two different ways to be executed. The first approach is through the server application made through springboot. Within this service application can you start a process which gives you tasks to solve for completing the process. The second way is through a Javascript console application that asks you a couple of questions before executing the entire process
+There are two distinct ways to run the program. The first method uses a server application created using SpringBoot. You can start a process within this service application that gives you tasks to complete in order to complete the process. The second method uses a Javascript console application that queries you briefly before starting the complete procedure. 
 
 **The Process**
 
@@ -37,7 +37,7 @@ The questions:
 
 -Details about the complain
 
-After the customer has filled this form in the server application (camunda-server) or answered the questions in the console application (Javascript) then the server will check if the issue is relevant to the customer service or to the tech team. If the issue is about the site, then the complain will be sent to the tech team otherwise will the complain proceed to the customer service. The releveant team will then recieve a mail by the auto mail sender about the complain, while the customer will receive a confirmation letter by the auto mail sender. Lastlly will the customer's mail be inserted into a email list within the Java project.
+The server will determine if the issue is relevant to the tech team or customer service after the customer has completed this form in the server application (Camunda-server) or responded to the questions in the console application (Javascript).If there is a problem with the website, the IT team will be notified; otherwise, customer support will be contacted.The appropriate team will then receive a message regarding the complaint from the auto mail sender, and the consumer will receive a letter of confirmation from the auto mail sender.Last but not least, the Java project's email list will contain the customer's email. 
 
 ![](Customer-Complains/PictureOfTheBPMN.png)
 *Picture of the BPMN process for the approach without an external task client*
@@ -45,7 +45,7 @@ After the customer has filled this form in the server application (camunda-serve
 ![](JavascriptTaskClient/PictureOfProcessJS.png)
 *Picture of the BPMN process for the approach with an external task client (javascript)*
 
-There is a small different between the two processes due to the console application not being able to send emails within the process (for some weird reason). Another difference, the console application doesn't contain a human task, because you can't execute a human task outside the server application.
+Due to the console application's inability to send emails (Camunda function) while the process is running, there is a slight variation between the two processes (for some weird reason). Another distinction is that the console application lacks a human task because such a task cannot be carried out independently of the server program. 
 
 ### The Methods
 
